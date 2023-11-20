@@ -1,0 +1,16 @@
+Tutorial for installing Snort on Kali Linux VM:
+
+1. Open the terminal and edit your sources list with a text editor of your choice:
+   sudo nano /etc/apt/sources.list
+
+2. To the file add:
+   deb http://http.us.debian.org/debian/ bullseye non-free contrib main
+
+3. save and exit ctrl+x and Y.
+
+4. Then update
+   sudo apt-get update
+
+5. Install snort:
+   sudo apt-get install snort
+
