@@ -1,0 +1,57 @@
+Tutorial - To set up a Kali Linux VM on a Mac M1 machine using UTM app: 
+
+1. Install the UTM application: 
+    Go to https://mac.getutm.app/ and click on Download.
+    Open UTM.dmg and follow the installation steps.
+
+2. Go to https://www.kali.org/get-kali/#kali-installer-images.
+   Install the Apple Silicon ARM64 Kali Linux Installer.
+
+3. On the UTM app, click on File -> New
+
+4. Click on 'Virtualize' 
+
+5. Choose 'Other'
+
+6. Click on Browse, and choose the installer installed by you (.iso image)
+
+7. Choose your hardware configuration (Allocating memory from 3048 to 4096 MB is recommended for smooth operation).
+   Let the number of cores be set to default.
+   Set the storage size of VM (16Gb to 32GB recommended).
+
+8. Review the Summary and Save, and then open VM setting by clicking on the settings icon on the top right.
+
+9. Under Devices, click on New -> Serial. (this installs the terminal so we can use console mode for installation).
+
+10. Start the VM.
+    You will see two screens: One for the Regular installation and one for the terminal installation. The second one is the one we need. You can ignore the other.
+    Choose and select Graphical Install.
+    Choose your settings to your preferences.
+    Choose your hostname 
+    Skip Domain name
+    Enter and set full name, username and password.
+    Choose timezone.
+    For partition disk, use 'guided-use entire disk', unless you want to encrypt your hard drive.
+
+11. In software selection, we want to go with default and install Xfce (Kali’s default desktop environment). 
+    Leave the rest of the options checked so Kali tools get installed too.
+    Wait for Kali Linux to install in UTM.
+
+12. Once the installation is complete, DO NOT BOOT THE MACHINE; instead, close this window and the VM. 
+
+13. Remove the installation media (The ISO Image), so you can boot into the new system rather than restarting the installation.
+
+14. In settings, remove Serial from Display.
+
+15. Boot the Kali Linux Machine for the first time and log into the user you created before.
+
+16. To enable copy-paste between the VM and host machine:
+    Go into a terminal and type this command:
+    sudo apt install spice-vdagent spice-webdavd
+
+17. After installation is complete, restart your Kali Linux to save changes.
+    
+
+    
+
+   
